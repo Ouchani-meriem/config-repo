@@ -1,0 +1,20 @@
+# profils-service.yml
+# Configuration supplémentaire ou de secours
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.j2ee.profils: DEBUG
+
+# Surcharges optionnelles
+# eureka:
+#   instance:
+#     metadata-map:
+#       custom: value
