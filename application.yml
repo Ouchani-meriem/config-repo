@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: global-config
+
+server:
+  error:
+    include-message: always
