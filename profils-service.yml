@@ -1,5 +1,7 @@
-# profils-service.yml
-# Configuration supplémentaire ou de secours
+# Ajoutez cette ligne
+custom:
+  test-value: "hello-from-config-server-123"
+
 management:
   endpoints:
     web:
@@ -12,9 +14,3 @@ management:
 logging:
   level:
     com.j2ee.profils: DEBUG
-
-# Surcharges optionnelles
-# eureka:
-#   instance:
-#     metadata-map:
-#       custom: value
